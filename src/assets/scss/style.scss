@@ -245,6 +245,7 @@
       width: 50vw;
       height: 100%;
       background: $primary;
+      border-radius: 0px 50px 50px 0px;
 
       @include breakpoint(1440px){
          display: none;
@@ -359,7 +360,7 @@
    &__row {
    @include adaptiv-value('margin-bottom', 75, 30, 0);
       grid-template-columns: repeat(2, 1fr);
-   @include adaptiv-value('gap', 30, 15, 0);
+   @include adaptiv-value('gap', 30, 20, 0);
 
    @include breakpoint(768px){
       grid-template-columns: 1fr;
@@ -469,23 +470,23 @@
          }
 
          &:nth-child(1){
-            transform: rotate(13deg);
+            transform: rotate(13deg) !important;
          }
 
          &:nth-child(2){
-            transform: rotate(-9deg);
+            transform: rotate(-9deg) !important;
          }
 
          &:nth-child(3){
-            transform: rotate(-15deg);
+            transform: rotate(-15deg) !important;
          }
 
          &:nth-child(4){
-            transform: rotate(6deg);
+            transform: rotate(6deg) !important;
          }
 
          &:nth-child(5){
-            transform: rotate(10deg);
+            transform: rotate(10deg) !important;
          }
       }
    }
